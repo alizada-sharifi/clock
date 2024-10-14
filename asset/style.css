@@ -1,0 +1,39 @@
+.clock {
+  background-image: url("image/clock.jpg");
+  background-size: cover;
+}
+.clock::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  background-color: #747474;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 4;
+}
+.sec::before {
+  content: "";
+  position: absolute;
+  width: 2px;
+  background-color: #ff0000;
+  height: 150px;
+  border-radius: 4px;
+}
+.min::before {
+  content: "";
+  position: absolute;
+  width: 6px;
+  background-color: #1c3d5a;
+  top: 6px;
+  height: 120px;
+  border-radius: 8px;
+}
+.hour::before {
+  content: "";
+  position: absolute;
+  width: 8px;
+  background-color: #4d4d4d;
+  top: 10px;
+  height: 100px;
+  border-radius: 10px;
+}
